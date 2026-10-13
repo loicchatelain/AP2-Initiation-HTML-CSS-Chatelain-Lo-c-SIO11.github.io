@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mémento des commandes Linux</title>
+    <link rel="stylesheet" href="../css/Global.css" />
+    <link rel="stylesheet" href="../css/linux_command_line.css">
+</head>
+<body>
+
+    <!-- Barre de navigation d'origine -->
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="javascript.html">JavaScript</a>
+          <a href="php.html">PHP</a>
+          <a href="kotlin.html">Kotlin</a>
+          <a href="python.html">Python</a>
+          <a href="sql.html">SQL</a>
+          <a href="angular.html">Angular</a>
+          <a href="git.html">Git</a>
+          <a href="github.html">GitHub</a>
+          <a href="linux.html">Linux</a>
+          <a href="linux_command_line.html">Ligne de commande Linux</a>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="content">
+        <h1>Mémento des commandes Linux</h1>
+        <p class="subtitle">Ce mémento regroupe les principales commandes Linux vues en cours de SISR.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Commande</th>
+                    <th>Description</th>
+                    <th>Exemple d'utilisation</th>
+                </tr>
+            </thead>
+            
+            <!-- Navigation et fichiers -->
+            <tbody>
+                <tr class="category-title"><td colspan="3">Navigation et fichiers</td></tr>
+                <tr>
+                    <td><code>pwd</code></td>
+                    <td>Affiche le répertoire courant</td>
+                    <td><code>pwd</code></td>
+                </tr>
+                <tr>
+                    <td><code>ls</code></td>
+                    <td>Liste les fichiers et dossiers</td>
+                    <td><code>ls -l</code></td>
+                </tr>
+                <tr>
+                    <td><code>cd</code></td>
+                    <td>Change de répertoire</td>
+                    <td><code>cd /home/user</code></td>
+                </tr>
+                <tr>
+                    <td><code>mkdir</code></td>
+                    <td>Crée un dossier</td>
+                    <td><code>mkdir projets</code></td>
+                </tr>
+                <tr>
+                    <td><code>touch</code></td>
+                    <td>Crée un fichier vide</td>
+                    <td><code>touch notes.txt</code></td>
+                </tr>
+                <tr>
+                    <td><code>cp</code></td>
+                    <td>Copie un fichier ou un dossier</td>
+                    <td><code>cp notes.txt copie.txt</code></td>
+                </tr>
+                <tr>
+                    <td><code>mv</code></td>
+                    <td>Déplace ou renomme un fichier</td>
+                    <td><code>mv notes.txt /tmp/</code></td>
+                </tr>
+                <tr>
+                    <td><code>rm</code></td>
+                    <td>Supprime un fichier (ou un dossier avec -r)</td>
+                    <td><code>rm notes.txt</code></td>
+                </tr>
+            </tbody>
+
+            <!-- Lecture et recherche -->
+            <tbody>
+                <tr class="category-title"><td colspan="3">Lecture et recherche</td></tr>
+                <tr>
+                    <td><code>cat</code></td>
+                    <td>Affiche le contenu d'un fichier</td>
+                    <td><code>cat /etc/hostname</code></td>
+                </tr>
+                <tr>
+                    <td><code>nano</code></td>
+                    <td>Édite un fichier dans le terminal</td>
+                    <td><code>nano fichier.txt</code></td>
+                </tr>
+                <tr>
+                    <td><code>grep</code></td>
+                    <td>Recherche un mot dans un fichier</td>
+                    <td><code>grep "erreur" /var/log/syslog</code></td>
+                </tr>
+                <tr>
+                    <td><code>find</code></td>
+                    <td>Recherche des fichiers</td>
+                    <td><code>find / -name "*.conf"</code></td>
+                </tr>
+            </tbody>
+
+            <!-- Droits et utilisateurs -->
+            <tbody>
+                <tr class="category-title"><td colspan="3">Droits et utilisateurs</td></tr>
+                <tr>
+                    <td><code>chmod</code></td>
+                    <td>Modifie les droits d'un fichier</td>
+                    <td><code>chmod 755 script.sh</code></td>
+                </tr>
+                <tr>
+                    <td><code>chown</code></td>
+                    <td>Change le propriétaire d'un fichier</td>
+                    <td><code>chown user fichier.txt</code></td>
+                </tr>
+                <tr>
+                    <td><code>sudo</code></td>
+                    <td>Exécute une commande en administrateur</td>
+                    <td><code>sudo apt update</code></td>
+                </tr>
+                <tr>
+                    <td><code>whoami</code></td>
+                    <td>Affiche l'utilisateur courant</td>
+                    <td><code>whoami</code></td>
+                </tr>
+                <tr>
+                    <td><code>useradd</code></td>
+                    <td>Crée un utilisateur</td>
+                    <td><code>sudo useradd -m alice</code></td>
+                </tr>
+            </tbody>
+
+            <!-- Système et réseau -->
+            <tbody>
+                <tr class="category-title"><td colspan="3">Système et réseau</td></tr>
+                <tr>
+                    <td><code>ps</code></td>
+                    <td>Liste les processus en cours</td>
+                    <td><code>ps aux</code></td>
+                </tr>
+                <tr>
+                    <td><code>kill</code></td>
+                    <td>Arrête un processus grâce à son PID</td>
+                    <td><code>kill 1234</code></td>
+                </tr>
+                <tr>
+                    <td><code>df</code></td>
+                    <td>Affiche l'espace disque</td>
+                    <td><code>df -h</code></td>
+                </tr>
+                <tr>
+                    <td><code>ip a</code></td>
+                    <td>Affiche les adresses IP de la machine</td>
+                    <td><code>ip a</code></td>
+                </tr>
+                <tr>
+                    <td><code>ping</code></td>
+                    <td>Teste la connexion avec une machine</td>
+                    <td><code>ping 8.8.8.8</code></td>
+                </tr>
+                <tr>
+                    <td><code>ssh</code></td>
+                    <td>Se connecte à une machine à distance</td>
+                    <td><code>ssh user@192.168.1.10</code></td>
+                </tr>
+                <tr>
+                    <td><code>apt install</code></td>
+                    <td>Installe un paquet</td>
+                    <td><code>sudo apt install apache2</code></td>
+                </tr>
+                <tr>
+                    <td><code>man</code></td>
+                    <td>Affiche le manuel d'une commande</td>
+                    <td><code>man ls</code></td>
+                </tr>
+            </tbody>
+        </table>
+        <section>
+                <h2>Une suggestion ?</h2>
+                <p>
+                  Il manque une commande essentielle ? Utilisez notre
+                  <a href="../ref_cours/formulaire.html">formulaire de contacte</a> pour nous la suggéger !
+                </p>
+               </section>
+    </main>
+<!-- footer -->
+    <footer>
+      <!-- définition des droits d'auteur -->
+      <p>&copy; 2023 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+    </footer>
+    <!-- script -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
